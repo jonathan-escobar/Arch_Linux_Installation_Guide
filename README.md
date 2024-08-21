@@ -143,11 +143,6 @@ Asegúrate de adaptar los comandos a tus particiones y nombres de disco específ
    root@archiso ~# mkfs.vfat -F32 /dev/nvme0n1p1
    ```
 
-4. **Formatear las particiones cifradas (de nuevo para asegurar):**
-   ```bash
-   root@archiso ~# mkfs.ext4 /dev/mapper/root
-   root@archiso ~# mkfs.ext4 /dev/mapper/home
-   ```
 
 ## 6. Montar Particiones en `/mnt`
 
