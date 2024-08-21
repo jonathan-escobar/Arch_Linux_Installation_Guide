@@ -198,9 +198,9 @@ Asegúrate de adaptar los comandos a tus particiones y nombres de disco específ
    root UUID=1234-5678-90AB-CDEF none luks
    home UUID=<uuid> <keyfile> <options>
    ```
-   ```markdown 
+   
    [![Ejemplo de Configuracion](Images/crypttab.jpg)
-   ```
+   
 
 ## 10. Chroot y Configuración del Sistema
 
@@ -254,9 +254,8 @@ Asegúrate de adaptar los comandos a tus particiones y nombres de disco específ
    root@archiso ~# nvim /etc/default/grub
    ```
 
-   ```markdown 
    [![Modificacion del GRUB_CMDLINE?LINUX](Images/grub.jpg)
-   ```
+
    Asegúrate de agregar o ajustar las siguientes líneas:
    ```plaintext
    GRUB_ENABLE_CRYPTODISK=enable
@@ -272,9 +271,9 @@ Asegúrate de adaptar los comandos a tus particiones y nombres de disco específ
    root@archiso ~# nvim /etc/mkinitcpio.conf
    ```
 
-   ```markdown 
+   
    [![Modificacion del GRUB_CMDLINE?LINUX](Images/mkinitcpio.jpg)
-   ```
+  
 
    Dentro del archivo, localiza la línea que empieza con `HOOKS` y asegúrate de que `encrypt` esté incluido después de `block`, como se muestra a continuación:
    ```plaintext
