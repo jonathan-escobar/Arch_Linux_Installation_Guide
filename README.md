@@ -199,7 +199,7 @@ Asegúrate de adaptar los comandos a tus particiones y nombres de disco específ
    home UUID=<uuid> <keyfile> <options>
    ```
    
-   [![Ejemplo de Configuracion](Images/crypttab.jpg)
+   ![Ejemplo de Configuracion](Images/crypttab.jpg)
    
 
 ## 10. Chroot y Configuración del Sistema
@@ -254,7 +254,7 @@ Asegúrate de adaptar los comandos a tus particiones y nombres de disco específ
    root@archiso ~# nvim /etc/default/grub
    ```
 
-   [![Modificacion del GRUB_CMDLINE?LINUX](Images/grub.jpg)
+   ![Modificacion del GRUB_CMDLINE?LINUX](Images/grub.jpg)
 
    Asegúrate de agregar o ajustar las siguientes líneas:
    ```plaintext
@@ -272,7 +272,7 @@ Asegúrate de adaptar los comandos a tus particiones y nombres de disco específ
    ```
 
    
-   [![Modificacion del GRUB_CMDLINE?LINUX](Images/mkinitcpio.jpg)
+   ![Modificacion del GRUB_CMDLINE?LINUX](Images/mkinitcpio.jpg)
   
 
    Dentro del archivo, localiza la línea que empieza con `HOOKS` y asegúrate de que `encrypt` esté incluido después de `block`, como se muestra a continuación:
